@@ -1,0 +1,43 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <RootNamespace>xp.auth.core.services</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="AuthenticationIntegration\**" />
+    <Compile Remove="ConsoleUI\**" />
+    <Compile Remove="NUnitAuthenticationTest\**" />
+    <Compile Remove="NUnitAuthentication\**" />
+    <Compile Remove="NUnitTestProject\**" />
+    <Compile Remove="NunitUnitTestProject\**" />
+    <EmbeddedResource Remove="AuthenticationIntegration\**" />
+    <EmbeddedResource Remove="ConsoleUI\**" />
+    <EmbeddedResource Remove="NUnitAuthenticationTest\**" />
+    <EmbeddedResource Remove="NUnitAuthentication\**" />
+    <EmbeddedResource Remove="NUnitTestProject\**" />
+    <EmbeddedResource Remove="NunitUnitTestProject\**" />
+    <None Remove="AuthenticationIntegration\**" />
+    <None Remove="ConsoleUI\**" />
+    <None Remove="NUnitAuthenticationTest\**" />
+    <None Remove="NUnitAuthentication\**" />
+    <None Remove="NUnitTestProject\**" />
+    <None Remove="NunitUnitTestProject\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="Program.cs" />
+    <Compile Remove="test.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.Configuration.ConfigurationManager" Version="5.0.0" />
+    <PackageReference Include="System.Data.SQLite" Version="1.0.113.6" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="AuthenticationIntegration\AuthenticationIntegration.csproj" />
+  </ItemGroup>
+
+</Project>
